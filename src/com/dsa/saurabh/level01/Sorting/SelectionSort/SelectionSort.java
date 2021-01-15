@@ -1,4 +1,4 @@
-package com.dsa.saurabh.level01.SelectionSort;
+package com.dsa.saurabh.level01.Sorting.SelectionSort;
 
 import java.util.Arrays;
 
@@ -29,6 +29,6 @@ public class SelectionSort {
     public static void main(String[] args) {
 
         int[] arr = {9, 6, 5, 0, 8, 2};
-        Arrays.stream(selectionSort(arr)).asLongStream().forEach(System.out::println);
+        Arrays.stream(selectionSort(arr)).asLongStream().boxed().map(x -> x + " ").forEach(System.out::print);
     }
 }

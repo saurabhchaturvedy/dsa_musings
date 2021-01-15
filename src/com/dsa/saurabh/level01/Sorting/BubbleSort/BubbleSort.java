@@ -1,4 +1,4 @@
-package com.dsa.saurabh.level01.BubbleSort;
+package com.dsa.saurabh.level01.Sorting.BubbleSort;
 
 import java.util.Arrays;
 
@@ -22,6 +22,6 @@ public class BubbleSort {
     public static void main(String[] args) {
 
         int[] arr = {9, 6, 5, 0, 8, 2};
-        Arrays.stream(bubbleSort(arr)).asLongStream().forEach(System.out::println);
+        Arrays.stream(bubbleSort(arr)).asLongStream().boxed().map(x->x+" ").forEach(System.out::print);
     }
 }
