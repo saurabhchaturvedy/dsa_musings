@@ -5,7 +5,7 @@ BUILD HEAP
 
 Step 1 :  Build heap first by calling heapify algorithm starting from (n/2-1) as ith value .
 Step 2 :  Inside heapify algorithm , find indexes of left and right children and check if the indexes are within the bound (n) and see if you can find an index which has 
-a value larger than value at index i .
+a value larger than value at index i . Denote that index as 'large' .
 
 Step 3 : If index i and large are not same , swap values at indexes i and large . Also call heapify again with large as the new i .
 
