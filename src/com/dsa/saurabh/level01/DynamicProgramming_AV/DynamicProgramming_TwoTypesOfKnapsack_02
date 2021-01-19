@@ -11,8 +11,8 @@
 
 * Knapsack problem 
 
-* Fractional knapsack - Greedy
-* 0-1 knapsack 
+* Fractional knapsack - Greedy. (We can put items as half in bag to maximize profit) (No DP approach)
+* 0-1 knapsack (We can only put item as a whole)
 * Unbounded knapsack
 
 
