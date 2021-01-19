@@ -12,8 +12,8 @@
 * Knapsack problem 
 
 * Fractional knapsack - Greedy. (We can put items as half in bag to maximize profit) (No DP approach)
-* 0-1 knapsack (We can only put item as a whole)
-* Unbounded knapsack
+* 0-1 knapsack (We can only put item as a whole) - We can only put one instance of item in the bag , not again and again
+* Unbounded knapsack - we can put as many instances as we want of an item in the bag
 
 
 Input : No. of items , Weight[]array , Value[]array. W = max-capacity
