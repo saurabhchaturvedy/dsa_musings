@@ -20,3 +20,4 @@ Input : No. of items , Weight[]array , Value[]array. W = max-capacity
 * Maximize the profit by putting items such that max profit is achieved with constraint of Max weight keeping in mind .
 
 Knapsack 0-1 has both choice + optimal solution problem scenario .
+DP = recursion + storage 
