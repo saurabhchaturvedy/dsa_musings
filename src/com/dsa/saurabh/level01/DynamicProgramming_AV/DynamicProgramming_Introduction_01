@@ -1,1 +1,18 @@
 
+* Never directly start with table of top-down approach .
+* DP is enhanced recursion .
+
+How to identify a DP problem ?
+
+* Always we will be given a choice scenario (Recursion)
+* Recursion + Overlapping problems (DP)
+* Recursive funtion > 2 invocations/call has possibility of having a DP use-case .
+* Optimal solution will be asked (Min,Max,Largest) 
+
+How to approach & solve a DP problem ?
+
+* Do not directly create a table first . (never use top-down approach right away !)
+* First write a recursive solution for it .
+* Memoize it .
+* If then required , then use top-down approach .
+* Problems with more variations can be directly started with top-down approach .
