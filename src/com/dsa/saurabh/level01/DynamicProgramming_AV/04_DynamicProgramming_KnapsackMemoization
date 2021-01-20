@@ -11,4 +11,4 @@ For , example in knapsack problem w and n changes .
 int t[n+1][w+1]
 
 
-Memoization is always suggested over Top-down approach .
+Memoization is always suggested over Top-down approach and is same in terms of time complexity .
