@@ -6,3 +6,5 @@ Recursive function steps
 * Base condition (Think of the smallest valid input)
 * Choice Diagram
 
+* Recursive function (always use a smaller input than the earlier input)
+
