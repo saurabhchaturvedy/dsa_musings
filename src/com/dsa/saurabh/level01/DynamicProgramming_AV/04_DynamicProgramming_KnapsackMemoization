@@ -1,1 +1,9 @@
+* Knapsack recursive solution changes to memoized solution in just recursive solution + 2 lines .
 
+We need to create table t for storage/memoization 
+
+* what will be dimensions for it , i.e m*n ?
+
+This will be determined by the variables which are changing in the recursive approach .
+
+For , example in knapsack problem w and n changes .
