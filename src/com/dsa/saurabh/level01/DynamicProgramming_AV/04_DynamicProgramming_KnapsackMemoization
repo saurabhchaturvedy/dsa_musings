@@ -7,3 +7,5 @@ We need to create table t for storage/memoization
 This will be determined by the variables which are changing in the recursive approach .
 
 For , example in knapsack problem w and n changes .
+
+int t[n+1][w+1]
