@@ -1,0 +1,19 @@
+As by AV ,
+
+following problems are variation of Knapsack problem 
+
+* Subset sum problem
+* Equal sum partition
+* Count of subset sum
+* Minimum subset sum difference
+* Target sum
+* Number of subset with a given difference
+
+
+* Here initialization/base conditions will be different 
+
+In knapsack Item W[] array , V[] array,W
+
+In coming varaiations , there can only be one array , then we consider it as only weight array .
+
+* constraints like W still needs to be identified in these variations , same as knapsack patterns .

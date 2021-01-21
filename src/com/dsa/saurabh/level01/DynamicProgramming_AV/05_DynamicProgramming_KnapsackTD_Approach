@@ -1,0 +1,16 @@
+
+Top-down appraoch code is derived from Recursive/Memoized versions .
+
+* Better at some places , where there are too many recursive calls .
+* No fear to StackOverflow error
+* Required in rare cases
+
+Recusrive
+
+* Memoization
+* Top-down approach
+
+
+Recursion -------> Top-down approach
+
+We create table dimensions out of changing values .
