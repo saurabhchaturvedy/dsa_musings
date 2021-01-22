@@ -1,18 +1,26 @@
-package com.dsa.saurabh.level01.Graphs.BreadthFirstSearch;
+package com.dsa.saurabh.level01.Graphs.TopologicalOrdering;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Vertex {
 
-    private String name;
+    private String data;
     private boolean visited;
+
     private List<Vertex> adjacencyList;
 
-    Vertex(String name) {
-        this.name = name;
+    Vertex(String data) {
+        this.data = data;
         this.adjacencyList = new ArrayList<>();
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 
     public boolean isVisited() {
@@ -31,7 +39,7 @@ public class Vertex {
         this.adjacencyList.add(vertex);
     }
 
-    public String toString() {
-        return this.name;
+    public void setAdjacencyList(List<Vertex> adjacencyList) {
+        this.adjacencyList = adjacencyList;
     }
 }
