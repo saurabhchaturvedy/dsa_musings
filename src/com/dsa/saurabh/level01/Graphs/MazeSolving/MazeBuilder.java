@@ -4,11 +4,11 @@ public class MazeBuilder {
 
 
     private static int[][] maze = {
-            {1, 1, 1, 0, 0,1},
-            {1, 2, 0, 0, 0,0},
-            {1, 1, 0, 1, 1,0},
-            {1, 1, 1, 3, 0,0},
-            {1, 1, 1, 1, 1,1}
+            {1, 1, 1, 0 },
+            {1, 2, 0, 0 },
+            {1, 1, 0, 1 },
+            {1, 1, 0, 3 },
+            {1, 1, 1, 1 }
     };
 
     private int startRowindex;
@@ -19,7 +19,7 @@ public class MazeBuilder {
     public void setUpMaze() {
 
         for (int i = 0; i < maze.length; i++) {
-            for (int j = 0; j < maze.length; j++) {
+            for (int j = 0; j < maze[i].length; j++) {
                 if (maze[i][j] == 2) {
                     this.setStartRowindex(i);
                     this.setStartColumnIndex(j);

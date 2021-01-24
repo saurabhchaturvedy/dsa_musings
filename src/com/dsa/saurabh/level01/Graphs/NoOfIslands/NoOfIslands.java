@@ -32,9 +32,9 @@ public class NoOfIslands {
 
         int[][] archipelago = {
                 {1, 1, 0, 0, 0},
-                {1, 1, 0, 0, 0},
+                {1, 1, 0, 1, 0},
                 {0, 0, 0, 0, 0},
-                {0, 0, 0, 1, 1}
+                {0, 1, 1, 1, 1}
         };
 
         int i = noOfIslands(archipelago);

@@ -34,10 +34,10 @@ public class MazeSolver {
 
         if (visited[i][j]) {
             return;
-        } else if (i < 0 || i >= endOfMaze) {
+        } else if (i < 0 || i > endOfMaze) {
             return
                     ;
-        } else if (j < 0 || j >= endOfMaze) {
+        } else if (j < 0 || j > endOfMaze) {
             return;
         } else if (maze[i][j] == 1) {
             return;
