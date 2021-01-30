@@ -1,0 +1,6 @@
+Variable Window Size
+Fixed Window Size
+
+Identify repititive work and remove it
+
+Window size = j-i+1
