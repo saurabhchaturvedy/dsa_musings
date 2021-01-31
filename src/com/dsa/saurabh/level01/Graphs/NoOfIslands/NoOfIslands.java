@@ -8,7 +8,9 @@ public class NoOfIslands {
 
         for (int i = 0; i < archipelago.length; i++) {
             for (int j = 0; j < archipelago[i].length; j++) {
-                noOfIslands = noOfIslands + dfs(archipelago, i, j);
+                if(archipelago[i][j]==1) {
+                    noOfIslands = noOfIslands + dfs(archipelago, i, j);
+                }
             }
         }
         return noOfIslands;
@@ -32,7 +34,7 @@ public class NoOfIslands {
 
         int[][] archipelago = {
                 {1, 1, 0, 0, 0},
-                {1, 1, 0, 1, 0},
+                {1, 1, 0, 0, 0},
                 {0, 0, 0, 0, 0},
                 {0, 1, 1, 1, 1}
         };

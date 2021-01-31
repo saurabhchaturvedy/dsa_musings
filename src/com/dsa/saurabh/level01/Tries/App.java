@@ -13,7 +13,7 @@ public class App {
         trie.insert("cram");
         trie.insert("apple");
 
-        List<String> ram = trie.getSuggestions("ra");
+        List<String> ram = trie.getSuggestions("");
         ram.stream().map(x -> x + " ").forEach(System.out::print);
 
     }
