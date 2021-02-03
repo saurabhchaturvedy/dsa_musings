@@ -1,0 +1,16 @@
+
+Recursion is about taking decisions which makes input small.
+
+Making a recursive tree , helps solve the problem .
+
+Recursion = choices + decisions
+
+Think about what decision you have to take , not on cutting the input size .
+
+
+Recursive Tree - Input/Output method
+
+Two steps to solve a Recursion problem
+
+* Design a recursive tree
+* Write the code

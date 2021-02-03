@@ -26,12 +26,12 @@ public class BinaryTree_DLL {
         convertBinaryTree2DLL(node.left);
         if (previous == null) {
             linkedListHead = node;
-            previous = node;
         } else {
             node.left = previous;
             previous.right = node;
-            previous = node;
         }
+
+        previous=node;
 
         convertBinaryTree2DLL(node.right);
         return linkedListHead;

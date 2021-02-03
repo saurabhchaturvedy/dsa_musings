@@ -1,0 +1,2 @@
+
+find height of left and right subtrees to deduce height as one which is greater .

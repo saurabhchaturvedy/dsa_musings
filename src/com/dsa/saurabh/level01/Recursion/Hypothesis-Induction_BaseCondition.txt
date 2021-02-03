@@ -1,0 +1,9 @@
+
+
+Recursion base condition - smallest valid output / smallest valid input
+
+IBH - useful in tree and linked list questions
+
+Print 1 to N print(n-1)
+
+IBH , IP/OP , Choice diagrams

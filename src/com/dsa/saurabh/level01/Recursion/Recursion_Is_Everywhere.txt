@@ -1,0 +1,16 @@
+Recursion is used heavily in :
+
+Arrays
+Strings
+Graphs
+Trees
+Divide and Conquer
+LinkedList // reverse a linked list in O(1)
+
+Backtracking
+
+Heap
+
+Stack
+
+Dynamic Programming !!
