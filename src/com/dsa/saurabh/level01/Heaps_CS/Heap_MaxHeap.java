@@ -35,11 +35,11 @@ public class Heap_MaxHeap {
     }
 
 
-    private int getMax() {
+    private int peek() {
         return this.heap[0];
     }
 
-    private int removeMax() {
+    private int poll() {
         int max = this.heap[0];
         this.heap[0] = this.heap[size - 1];
         heapifyMax(0);
@@ -87,15 +87,15 @@ public class Heap_MaxHeap {
         heap_maxHeap.insert(arr[2]);
         heap_maxHeap.insert(arr[3]);
 
-        System.out.println("max value is : " + heap_maxHeap.getMax());
+        System.out.println("max value is : " + heap_maxHeap.peek());
 
-        heap_maxHeap.removeMax();
+        heap_maxHeap.poll();
 
-        System.out.println("max value is : " + heap_maxHeap.getMax());
+        System.out.println("max value is : " + heap_maxHeap.peek());
 
         heap_maxHeap.buildHeap(arr);
 
-        System.out.println("max value is : " + heap_maxHeap.getMax());
+        System.out.println("max value is : " + heap_maxHeap.peek());
     }
 }
 

@@ -33,3 +33,19 @@ Min Heap == klogK + (N-K)logK
 Finding Kth largest element in a running stream by sorting =======> N*(NlogN)
 Finding Kth largest element in a running stream by min-heap =======> klogK + (N-K)logK
 
+
+Top K largest values in an array - max heap ========> O(n) + Klog(n)
+
+
+Heap Sort
+
+Put all values in min heap
+Poll values one by one and put in array
+
+Time Complexity - O(n) + O(logn) = O(nlogn)
+Space Complexity - O(n)
+
+Get Top K frequent elements in given array -
+
+(n1-n2) - Ascending
+(n2-n1) - Descending
