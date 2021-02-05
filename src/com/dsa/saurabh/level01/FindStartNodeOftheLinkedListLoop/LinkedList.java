@@ -29,17 +29,17 @@ public class LinkedList {
             slow = slow.next;
             if (fast == slow) {
                 // loop is detected , lets find the first node
+                System.out.println("<<< Loop is detected in the list..length of the loop is >>> " + loopLength(slow));
                 start = head;
                 while (start != slow) {
                     start = start.next;
                     slow = slow.next;
                 }
                 isLoopFirstNodeFound = true;
-                while (fast.next!=slow)
-                {
+                while (fast.next != slow) {
                     fast = fast.next;
                 }
-                fast.next=null;
+                fast.next = null;
             }
             if (isLoopFirstNodeFound)
                 break;
@@ -47,13 +47,22 @@ public class LinkedList {
         return start;
     }
 
-    private static void display(ListNode head)
-    {
+    private static int loopLength(ListNode slow) {
+
+        int length = 1;
+        ListNode temp = slow;
+        while (temp.next != slow) {
+            length++;
+            temp = temp.next;
+        }
+        return length;
+    }
+
+    private static void display(ListNode head) {
         ListNode current = head;
-        while(current!=null)
-        {
-            System.out.print(current.data+" -> ");
-            current=current.next;
+        while (current != null) {
+            System.out.print(current.data + " -> ");
+            current = current.next;
         }
         System.out.println("null");
     }
@@ -72,7 +81,7 @@ public class LinkedList {
         third.next = fourth;
         fourth.next = fifth;
         fifth.next = third;
-      //  display(linkedList.head);
+        //  display(linkedList.head);
 
         ListNode listNode = detectLoopAndFindFirstNode(linkedList.head);
         System.out.println(listNode.data);

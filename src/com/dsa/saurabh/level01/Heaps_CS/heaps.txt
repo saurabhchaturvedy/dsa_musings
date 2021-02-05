@@ -1,0 +1,35 @@
+
+
+Heap ===> Complete binary tree , always fill values in sequence
+
+Heaps in Java ======>  PriorityQueue
+
+Max heap ======> Root is greater than children (even after removal of an element properties are maintained)
+
+Min heap ======> Root is less than children (even after removal of an element properties are maintained)
+
+Deletion on heap - remove root and replace with last element in heap
+the last element then get replaced with element greater than it .
+
+for 0 indexed array :
+
+leftChild = 2i+1
+rightChild = 2i+2
+
+parent = (i-1)/2;
+
+O(logn) === adding element to the heap
+
+O(logn) ===== removing an element from heap
+
+PriorityQueue in Java by ==========> default is a min heap
+
+Finding Kth largest element in an array by sorting ===> O(nlogn) + O(k)
+
+PriorityQueue ==========> O(n) + K*log(n)
+
+Min Heap == klogK + (N-K)logK
+
+Finding Kth largest element in a running stream by sorting =======> N*(NlogN)
+Finding Kth largest element in a running stream by min-heap =======> klogK + (N-K)logK
+
