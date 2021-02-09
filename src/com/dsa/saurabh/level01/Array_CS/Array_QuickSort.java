@@ -4,7 +4,7 @@ public class Array_QuickSort {
 
 
     public static void main(String[] args) {
-        int[] array = {9, 4, 13, 7, 8, 15};
+        int[] array = {9, 4, 13, 8, 8, 15};
         quickSort(array, 0, array.length - 1);
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
