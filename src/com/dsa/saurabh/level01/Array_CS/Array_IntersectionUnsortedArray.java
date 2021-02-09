@@ -22,9 +22,7 @@ public class Array_IntersectionUnsortedArray {
             j++;
         }
     }
-}
 
-public class ArrayApp {
 
     public static void main(String[] args) {
 
