@@ -50,10 +50,10 @@ public class BinaryTree_KthSmallestElement {
         binaryTree_kthSmallestElement.root = new TreeNode(10);
         TreeNode second = new TreeNode(20);
         TreeNode third = new TreeNode(30);
-         binaryTree_kthSmallestElement.root.left = second;
-         binaryTree_kthSmallestElement.root.right = third;
+        binaryTree_kthSmallestElement.root.left = second;
+        binaryTree_kthSmallestElement.root.right = third;
 
-        System.out.println(binaryTree_kthSmallestElement.KthSmallesElement(binaryTree_kthSmallestElement.root, 3));
+        System.out.println(binaryTree_kthSmallestElement.KthSmallesElement(binaryTree_kthSmallestElement.root, 2));
 
     }
 }
