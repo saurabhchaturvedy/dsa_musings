@@ -48,6 +48,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
             delete(data, node.getRight());
         } else {
             if (node.getLeft() == null && node.getRight() == null) {
+                System.out.println("Removing a leaf node...");
                 Node<T> parent = node.getParent();
 
                 if (parent != null && parent.getLeft() == node) {
@@ -62,6 +63,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
 
                 node = null;
             } else if (node.getRight() != null && node.getLeft() == null) {
+                System.out.println("Removing a node with only a right child...");
                 Node<T> parent = node.getParent();
 
                 if (parent != null && parent.getRight() == node) {
@@ -78,6 +80,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
                 node.getRight().setParent(parent);
                 node = null;
             } else if (node.getLeft() != null && node.getRight() == null) {
+                System.out.println("Removing a node with only a left child...");
                 Node<T> parent = node.getParent();
 
                 if (parent != null && parent.getRight() == node) {
@@ -94,7 +97,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T> {
                 }
             } else {
                 // node has 2 children
-
+                System.out.println("Removing a node with 2 children...");
                 Node<T> predecessor = getPredecessor(node.getLeft());
                 T temp = predecessor.getData();
                 predecessor.setData(node.getData());
