@@ -27,7 +27,7 @@ public class Trie {
             }
         }
 
-        tempNode.setLeaf(true);
+        tempNode.setEndOfWord(true);
 
     }
 
@@ -43,9 +43,7 @@ public class Trie {
                 trieNode = trieNode.getChild(index);
             }
         }
-
-        if (!trieNode.isLeaf()) return false;
-        return true;
+        return trieNode.isEndOfWord();
     }
 
     public List<String> getSuggestions(String prefix) {
@@ -65,14 +63,25 @@ public class Trie {
 
         if (node == null) return;
 
-        if (node.isLeaf()) {
+        if (node.isEndOfWord()) {
             suggestionList.add(prefix);
         }
 
-        for (Node node1:node.getChildren()) {
+        for (Node node1 : node.getChildren()) {
             if (node1 == null) continue;
             String character = node1.getCharacter();
             collect(node1, prefix + character, suggestionList);
         }
+    }
+
+    public static void main(String[] args) {
+        Trie trie = new Trie();
+        trie.insert("cat");
+        trie.insert("dog");
+        trie.insert("bat");
+        trie.insert("pot");
+        trie.insert("cataract");
+
+        System.out.println(trie.search("ba"));
     }
 }

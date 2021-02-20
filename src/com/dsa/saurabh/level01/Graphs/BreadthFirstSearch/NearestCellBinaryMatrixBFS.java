@@ -20,6 +20,13 @@ class NearestCellBinaryMatrixBFS {
         }
         // initialize minDistance as 0
         int minDistance = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(ans[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
         while (!queue.isEmpty()) {
             // initialize size as size of queue
             int size = queue.size();
@@ -32,23 +39,11 @@ class NearestCellBinaryMatrixBFS {
                 // enqueue all the valid adjacent cells of curr that are equals to
                 // 0 in the matrix array and set them as 1
                 // left adjacent
-                int leftRow = curr.row - 1;
-                int leftCol = curr.col;
-                if ((leftRow >= 0 && leftRow < n) && (leftCol >= 0 && leftCol < m)) {
-                    if (matrix[leftRow][leftCol] == 0) {
-                        queue.add(new Coordinate(leftRow, leftCol));
-                        matrix[leftRow][leftCol] = 1;
-                    }
-                }
+
+
+
                 // right adjacent
-                int rightRow = curr.row + 1;
-                int rightCol = curr.col;
-                if ((rightRow >= 0 && rightRow < n) && (rightCol >= 0 && rightCol < m)) {
-                    if (matrix[rightRow][rightCol] == 0) {
-                        queue.add(new Coordinate(rightRow, rightCol));
-                        matrix[rightRow][rightCol] = 1;
-                    }
-                }
+
                 // up adjacent
                 int upRow = curr.row;
                 int upCol = curr.col + 1;
@@ -58,6 +53,17 @@ class NearestCellBinaryMatrixBFS {
                         matrix[upRow][upCol] = 1;
                     }
                 }
+
+                int rightRow = curr.row + 1;
+                int rightCol = curr.col;
+                if ((rightRow >= 0 && rightRow < n) && (rightCol >= 0 && rightCol < m)) {
+                    if (matrix[rightRow][rightCol] == 0) {
+                        queue.add(new Coordinate(rightRow, rightCol));
+                        matrix[rightRow][rightCol] = 1;
+                    }
+                }
+
+
                 // down adjacent
                 int downRow = curr.row;
                 int downCol = curr.col - 1;
@@ -65,6 +71,15 @@ class NearestCellBinaryMatrixBFS {
                     if (matrix[downRow][downCol] == 0) {
                         queue.add(new Coordinate(downRow, downCol));
                         matrix[downRow][downCol] = 1;
+                    }
+                }
+
+                int leftRow = curr.row - 1;
+                int leftCol = curr.col;
+                if ((leftRow >= 0 && leftRow < n) && (leftCol >= 0 && leftCol < m)) {
+                    if (matrix[leftRow][leftCol] == 0) {
+                        queue.add(new Coordinate(leftRow, leftCol));
+                        matrix[leftRow][leftCol] = 1;
                     }
                 }
             }
@@ -82,19 +97,15 @@ class NearestCellBinaryMatrixBFS {
     }
     public static void main(String[] args) {
         // Example 1
-        int matrix1[][] = new int[][]{
-                {0, 1, 0},
-                {0, 0, 0},
-                {1, 0, 0}
-        };
-        minimumDistance(matrix1);
-        // Example 2
-        int matrix2[][] = new int[][]{
-                {0, 0, 0},
-                {0, 0, 0},
-                {1, 0, 1}
-        };
-        minimumDistance(matrix2);
+       int mat[][] = {{ 0, 0, 0, 1}};
+        minimumDistance(mat);
+//        // Example 2
+//        int matrix2[][] = new int[][]{
+//                {0, 0, 0},
+//                {0, 0, 0},
+//                {1, 0, 1}
+//        };
+//        minimumDistance(matrix2);
     }
     // class representing coordinates of a cell in matrix
     static class Coordinate {

@@ -4,8 +4,7 @@ public class Node {
 
     private String character;
     private Node[] children;
-    private boolean leaf;
-    private boolean visited;
+    private boolean isEndOfWord;
 
     Node(String character) {
         this.character = character;
@@ -24,28 +23,16 @@ public class Node {
         return character;
     }
 
-    public void setCharacter(String character) {
-        this.character = character;
-    }
-
     public Node[] getChildren() {
         return children;
     }
 
-    public boolean isLeaf() {
-        return leaf;
+    public boolean isEndOfWord() {
+        return isEndOfWord;
     }
 
-    public void setLeaf(boolean leaf) {
-        this.leaf = leaf;
-    }
-
-    public boolean isVisited() {
-        return visited;
-    }
-
-    public void setVisited(boolean visited) {
-        this.visited = visited;
+    public void setEndOfWord(boolean endOfWord) {
+        this.isEndOfWord = endOfWord;
     }
 
     @Override
