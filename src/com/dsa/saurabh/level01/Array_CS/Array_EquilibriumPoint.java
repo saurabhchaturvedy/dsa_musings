@@ -1,5 +1,5 @@
 package com.dsa.saurabh.level01.Array_CS;
-
+//8
 public class Array_EquilibriumPoint {
     private static int equilibriumPoint(int arr[]) {
         int rightSum = 0;

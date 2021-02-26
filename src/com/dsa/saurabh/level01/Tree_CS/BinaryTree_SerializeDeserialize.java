@@ -2,7 +2,7 @@ package com.dsa.saurabh.level01.Tree_CS;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//22
 public class BinaryTree_SerializeDeserialize {
 
     TreeNode root;
@@ -40,7 +40,6 @@ public class BinaryTree_SerializeDeserialize {
         TreeNode node = new TreeNode(list.get(deserializationIndex++));
         node.left = deserialize(list);
         node.right = deserialize(list);
-
         return node;
     }
 

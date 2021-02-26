@@ -2,7 +2,7 @@ package com.dsa.saurabh.level01.Array_CS;
 
 import java.util.HashSet;
 import java.util.Set;
-
+//9
 public class Array_FirstRepeatingChar {
 
     public int firstRepeatingValueInArray(int[] arr) {

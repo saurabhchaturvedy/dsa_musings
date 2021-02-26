@@ -1,5 +1,5 @@
 package com.dsa.saurabh.level01.Array_CS;
-
+//7
 public class Array_DeleteElement {
 
     static int[] array = {8, 4, 1, 3, 7, 6};

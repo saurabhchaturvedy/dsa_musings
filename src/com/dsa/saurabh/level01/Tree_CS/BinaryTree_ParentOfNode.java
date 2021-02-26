@@ -1,5 +1,5 @@
 package com.dsa.saurabh.level01.Tree_CS;
-
+//20
 public class BinaryTree_ParentOfNode {
 
     TreeNode root;
