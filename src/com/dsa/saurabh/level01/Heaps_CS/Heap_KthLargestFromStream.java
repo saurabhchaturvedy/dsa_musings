@@ -22,13 +22,14 @@ public class Heap_KthLargestFromStream {
     }
 
     public static void main(String[] args) {
+
         Heap_KthLargestFromStream a = new Heap_KthLargestFromStream();
 
         int[] arr = new int[]{10, 7, 11, 5, 27, 8, 9, 45};
         int k = 3;
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(a.add(arr[i], k));
+            System.out.print(a.add(arr[i], k)+" ");
         }
 
     }
