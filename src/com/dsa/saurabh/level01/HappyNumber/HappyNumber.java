@@ -28,6 +28,6 @@ public class HappyNumber {
 
     public static void main(String[] args) {
 
-        System.out.println(isHappy(20));
+        System.out.println(isHappy(31));
     }
 }
